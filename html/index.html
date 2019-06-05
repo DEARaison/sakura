@@ -13,15 +13,17 @@
     <link href="../css/gotopstyle.css" rel="stylesheet">
     <link href="../css/jquery-sakura.css" rel="stylesheet">
     <link href="../css/animate.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet">
 </head>
 
 <body>
 <header>
-    <a href="./"><img alt="Sakura" class="img-fluid" src="../images/Sakura.jpg"></a>
+    <a href="./index.html"><img alt="Sakura" class="img-fluid" src="../images/Sakura-banner.png"></a>
 </header>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light pink lighten-4 sticky-top">
-    <a class="navbar-brand" href="#">Sakura</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light pink lighten-4 sticky-top" id="navbar"><a class="navbar-brand"
+                                                                                                    href="#">Sakura</a>
 
     <button aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"
             class="navbar-toggler"
@@ -35,10 +37,7 @@
                 <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cherry-blossom.html">Cherry Blossom</a>
+                <a class="nav-link" href="cherryblossom.html">Cherry Blossom</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Kimono</a>
@@ -55,36 +54,38 @@
         </ul>
     </div>
 </nav>
-
-<main class="container"><br>
+<br>
+<main class="container">
     <div class="container greeting-panel">
         <h1>You want to know about Japanese Culture?</h1>
         <p>You are in the right website to explore about Japanese Culture</p>
     </div>
 
-    <div class="topic-background-left zoom" id="cherry-blossom-topic-background">
-        <div class="topic-content-right d-flex justify-content-end align-items-center">
-            <div class="col-md-9">
-                <h2>Cherry Blossom</h2>
-                <p>Japan is also known as <span style="font-style: italic">Land of Cherry blossom</span>.</p>
-                <p>Because not only they plant cherry blossom on the whole Japan <br> but also it's associated
-                    with Japanese culture.</p>
-                <a href="cherry-blossom.html">Read more</a>  <!--TODO Read more link-->
-
-            </div>
-        </div>
-    </div>
-
-    <div class="topic-background-left" style="background-image: url('../images/Sakura_topic.png');">
-        <div class="container topic-content-right sakura-topic-content">
-            <div class="row justify-content-end">
-                <div class="col-md-8">
+    <a class="topic-link" href="cherryblossom.html">
+        <div class="topic-background-left" id="cherry-blossom-topic-background">
+            <div class="topic-content-right d-flex justify-content-end align-items-center">
+                <div class="col-md-9">
                     <h2>Cherry Blossom</h2>
-                    <p></p>
+                    <p>Japan is also known as <span style="font-style: italic">Land of Cherry blossom</span>.</p>
+                    <p>Because not only they plant cherry blossom on the whole Japan <br> but also it's associated
+                        with Japanese culture.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </a>
+
+    <a class="topic-link" href="cherryblossom.html">
+        <div class="topic-background-left" style="background-image: url('../images/Sakura-topic.png');">
+            <div class="container topic-content-right">
+                <div class="row justify-content-end">
+                    <div class="col-md-8">
+                        <h2>Cherry Blossom</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
 </main>
 
 <a href="javascript:void(0);" id="go_top" style="display: none;"
@@ -97,14 +98,12 @@
 <script src="../js/jquery-3.4.0.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+
+
 <script src="../js/sakura-on-click.js"></script>
 <script src="../js/go-top-script.js"></script>
 <script src="../js/jquery-sakura.min.js"></script>
-<script>
-    (function ($) {
-        $('body').sakura();
-    })(jQuery);
-</script>
+<script src="../js/jquery-sakura-starter.js"></script>
 </body>
 </html>
 

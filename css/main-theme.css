@@ -34,11 +34,15 @@ body {
     background-color: rgba(255, 212, 183, 0.3);
 }
 
+footer {
+    margin-top: 20px;
+}
+
 h1, h2, h3, h4, h5, h6, .navbar-brand, .navbar-nav a {
     font-family: QumpellkaNo12, sans-serif;
 }
 
-p, a {
+p, a, span {
     font-family: Montserrat, sans-serif;
 }
 
@@ -54,8 +58,8 @@ p, a {
     color: #616161 !important;
 }
 
-.darken-grey-text {
-    color: #2E2E2E;
+.breadcrumb .breadcrumb-item:nth-child(1n + 2)::before {
+    content: none;
 }
 
 .greeting-panel {
@@ -68,7 +72,13 @@ p, a {
 }
 
 #cherry-blossom-topic-background {
-    background: url("../images/Sakura_topic_small.png");
+    background: url("../images/Sakura-topic-small.png");
+}
+
+.topic-link, .topic-link:visited, .topic-link:link, .topic-link:active, .topic-link:focus {
+    color: black !important;
+    text-decoration: none !important;
+    outline: 0 !important;
 }
 
 .topic-background-left, .topic-background-right {
@@ -80,15 +90,24 @@ p, a {
     margin-top: 20px;
     box-shadow: 0 0 6px rgba(100, 100, 100, 0.3);
     background-size: 100% 100%;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
-.topic-content-right, .topic-content-right {
+.topic-content-right, .topic-content-left {
     height: 310px;
     width: 100%;
     position: absolute;
     z-index: 1;
     text-align: center;
     font-size: large;
+    background-color: rgba(100, 100, 100, 0.0);
+    transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
 }
+
+.topic-link:hover .topic-background-left .topic-content-right, .topic-link:hover .topic-background-right .topic-content-left {
+    background-color: rgba(100, 100, 100, 0.1);
+}
+
+
+
 

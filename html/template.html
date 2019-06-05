@@ -13,15 +13,18 @@
     <link href="../css/gotopstyle.css" rel="stylesheet">
     <link href="../css/jquery-sakura.css" rel="stylesheet">
     <link href="../css/animate.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet">
 </head>
 
 <body>
 <header>
-    <a href="./"><img alt="Sakura" class="body-shadow" height="310" src="../images/Sakura.jpg" width="100%"></a>
+    <a href="./"><img alt="Sakura" class="img-fluid" src="../images/Sakura-banner.png"></a>
 </header>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light pink lighten-4 sticky-top">
-    <a class="navbar-brand" href="./">Sakura</a>
+    <a class="navbar-brand" href="#">Sakura</a>
+
     <button aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"
             class="navbar-toggler"
             data-target="#navbarToggler" data-toggle="collapse" type="button">
@@ -34,10 +37,7 @@
                 <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Cherry Blossom</a>
+                <a class="nav-link" href="cherryblossom.html">Cherry Blossom</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Kimono</a>
@@ -54,14 +54,10 @@
         </ul>
     </div>
 </nav>
-
-<main class="container"><br>
+<br>
+<main class="container">
     <div class="container greeting-panel">
-        <h1>Cherry Blossom</h1>
-    </div>
-    <div class="container">
-
-
+        <h1>You want to know about Japanese Culture?</h1>
     </div>
 
 </main>
@@ -72,17 +68,14 @@
 <footer class="card-footer pink lighten-4" style="text-align: center">Copyleft © 2019 All Rights Reserved. Only for
     education purposes.
 </footer>
+
 <script src="../js/jquery-3.4.0.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/sakura-on-click.js"></script>
 <script src="../js/go-top-script.js"></script>
 <script src="../js/jquery-sakura.min.js"></script>
-<script>
-    (function ($) {
-        $('body').sakura();
-    })(jQuery);
-</script>
+<script src="../js/jquery-sakura-starter.js"></script>
 </body>
 </html>
 
