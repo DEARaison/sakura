@@ -19,11 +19,11 @@
 
 <body>
 <header>
-    <a href="./index.html"><img alt="Sakura" class="img-fluid" src="../images/Sakura-banner.png"></a>
+    <a href="index.html"><img alt="Sakura" class="img-fluid" src="../images/Sakura-banner.png"></a>
 </header>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light pink lighten-4 sticky-top" id="navbar"><a class="navbar-brand"
-                                                                                                    href="#">Sakura</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light pink lighten-4" id="navbar">
+    <a class="navbar-brand" href="index.html">Sakura</a>
 
     <button aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"
             class="navbar-toggler"
@@ -34,58 +34,103 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="cherryblossom.html">Cherry Blossom</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Kimono</a>
+                <a class="nav-link" href="kimono.html">Kimono</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Kimono</a>
+                <a class="nav-link" href="tea-ceremony.html">Tea Ceremony</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Kimono</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Kimono</a>
+                <a class="nav-link" href="cuisine.html">Japanese Cuisine</a>
             </li>
         </ul>
     </div>
 </nav>
 <br>
 <main class="container">
-    <div class="container greeting-panel">
+    <div class="container greeting-panel rounded">
         <h1>You want to know about Japanese Culture?</h1>
         <p>You are in the right website to explore about Japanese Culture</p>
     </div>
 
     <a class="topic-link" href="cherryblossom.html">
-        <div class="topic-background-left" id="cherry-blossom-topic-background">
-            <div class="topic-content-right d-flex justify-content-end align-items-center">
+        <div class="topic-background-left topic-panel" id="cherry-blossom-topic-background">
+            <div class="topic-content-right topic-panel d-flex justify-content-end align-items-center">
                 <div class="col-md-9">
                     <h2>Cherry Blossom</h2>
-                    <p>Japan is also known as <span style="font-style: italic">Land of Cherry blossom</span>.</p>
-                    <p>Because not only they plant cherry blossom on the whole Japan <br> but also it's associated
-                        with Japanese culture.</p>
+                    <p>
+                        Japan is also known as <span style="font-style: italic">Land of Cherry blossom</span>
+                        <br>
+                        Because not only they plant cherry blossom on the whole Japan
+                        <br>
+                        but also it's associated with Japanese culture
+                    </p>
                 </div>
             </div>
         </div>
     </a>
 
-    <a class="topic-link" href="cherryblossom.html">
-        <div class="topic-background-left" style="background-image: url('../images/Sakura-topic.png');">
-            <div class="container topic-content-right">
-                <div class="row justify-content-end">
-                    <div class="col-md-8">
-                        <h2>Cherry Blossom</h2>
-                        <p></p>
-                    </div>
+    <a class="topic-link" href="kimono.html">
+        <div class="topic-background-right topic-panel" id="kimono-topic-background">
+            <div class="topic-content-left topic-panel d-flex justify-content-start align-items-center">
+                <div class="col-md-7">
+                    <h2>Kimono</h2>
+                    <p>
+                        Kimono (着物) is a traditional clothe of Japan
+                        <br>
+                        It is one of beautiful highlight of Japanese Culture
+                        <br>
+                        Japanese usually wears Kimono in important event like Wedding
+                    </p>
                 </div>
             </div>
         </div>
     </a>
+
+    <a class="topic-link" href="tea-ceremony.html">
+        <div class="topic-background-left topic-panel" id="tea-ceremony-topic-background">
+            <div class="topic-content-right topic-panel d-flex justify-content-end align-items-center">
+                <div class="col-md-7">
+                    <h2>Japanese tea ceremony</h2>
+                    <p>
+                        Also called the<span style="font-style: italic">Way of Tea</span>
+                        <br>
+                        It Is a Japanese cultural activity involving the ceremonial preparation and presentation of
+                        matcha
+                        (抹茶), powdered green tea.
+                    </p>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a class="topic-link" href="cuisine.html">
+        <div class="topic-background-right topic-panel" id="shushi-topic-background">
+            <div class="topic-content-left topic-panel d-flex justify-content-start align-items-center">
+                <div class="col-md-10">
+                    <h2>Sushi</h2>
+                    <p>
+                        Japanese すし, 寿司, 鮨
+                        <br>
+                        Sushi is a Japanese dish of prepared vinegared rice,
+                        <br>
+                        usually with some sugar and salt,
+                        <br>
+                        accompanying a variety of ingredients,
+                        <br>
+                        such as seafood, vegetables, and occasionally tropical fruits.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
 </main>
 
 <a href="javascript:void(0);" id="go_top" style="display: none;"

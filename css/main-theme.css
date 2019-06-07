@@ -42,8 +42,16 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .navbar-nav a {
     font-family: QumpellkaNo12, sans-serif;
 }
 
-p, a, span {
+p, a, span, td {
     font-family: Montserrat, sans-serif;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.table-bordered, .table-bordered td, .table-bordered th {
+    border: 1px solid rgba(255, 183, 197, .67);
 }
 
 .hm-gradient {
@@ -75,27 +83,41 @@ p, a, span {
     background: url("../images/Sakura-topic-small.png");
 }
 
+#kimono-topic-background {
+    background: url("../images/kimono-topic.jpg");
+}
+
+#tea-ceremony-topic-background {
+    background: url("../images/tea-ceremony-topic-banner.png");
+}
+
+#shushi-topic-background {
+    background: url("../images/sushi-topic-background.jpg");
+}
+
 .topic-link, .topic-link:visited, .topic-link:link, .topic-link:active, .topic-link:focus {
     color: black !important;
     text-decoration: none !important;
     outline: 0 !important;
 }
 
-.topic-background-left, .topic-background-right {
-    height: 310px;
+.topic-panel {
+    height: 400px;
     width: 100%;
+    border-radius: .25rem;
+}
+
+.topic-background-left, .topic-background-right {
     position: relative;
     z-index: 0;
     margin-bottom: 20px;
     margin-top: 20px;
     box-shadow: 0 0 6px rgba(100, 100, 100, 0.3);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
 }
 
 .topic-content-right, .topic-content-left {
-    height: 310px;
-    width: 100%;
     position: absolute;
     z-index: 1;
     text-align: center;
@@ -107,7 +129,3 @@ p, a, span {
 .topic-link:hover .topic-background-left .topic-content-right, .topic-link:hover .topic-background-right .topic-content-left {
     background-color: rgba(100, 100, 100, 0.1);
 }
-
-
-
-

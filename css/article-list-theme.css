@@ -1,0 +1,53 @@
+.spots-list-title {
+    margin-top: 1.25em;
+    margin-bottom: .67em;
+}
+
+.spots-list {
+    margin-bottom: 1.33em;
+}
+
+.spots-list .spot-article {
+    border-bottom: solid 1px rgba(255, 183, 197, .67);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.spots-list .spot-article:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.spots-list .spot-article .spot-meta {
+    margin-top: .7em;
+    margin-bottom: .85em;
+    line-height: 1.35;
+}
+
+.spots-list .spot-article .spot-meta .spot-meta-season-range {
+    margin-bottom: .225em;
+    color: #ff4698;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.spots-list .spot-article .spot-meta .spot-meta-content {
+    font-size: 0.9em;
+    color: #827878;
+}
+
+.spots-list .spot-article .spot-meta .spot-meta-content-extra-infor {
+    color: #000099;
+}
+
+.spots-list .spot-article .spot-meta .wrap-text {
+    flex: auto;
+}
+
+.spots-list .spot-article .spot-information {
+    font-size: 1em;
+    line-height: 1.45;
+    font-weight: 300;
+}
+
