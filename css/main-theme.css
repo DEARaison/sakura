@@ -38,7 +38,7 @@ footer {
     margin-top: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar-brand, .navbar-nav a {
+h1, h2, h3, h4, h5, h6, .navbar-brand, .navbar-nav a, .article-list .article-title-link {
     font-family: QumpellkaNo12, sans-serif;
 }
 
@@ -95,12 +95,6 @@ strong {
     background: url("../images/sushi-topic-background.jpg");
 }
 
-.topic-link, .topic-link:visited, .topic-link:link, .topic-link:active, .topic-link:focus {
-    color: black !important;
-    text-decoration: none !important;
-    outline: 0 !important;
-}
-
 .topic-panel {
     height: 400px;
     width: 100%;
@@ -126,6 +120,12 @@ strong {
     transition: all 0.4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
 }
 
-.topic-link:hover .topic-background-left .topic-content-right, .topic-link:hover .topic-background-right .topic-content-left {
+.text-link, .text-link:visited, .text-link:link, .text-link:active, .text-link:focus {
+    color: black !important;
+    text-decoration: none !important;
+    outline: 0 !important;
+}
+
+.text-link:hover .topic-background-left .topic-content-right, .text-link:hover .topic-background-right .topic-content-left {
     background-color: rgba(100, 100, 100, 0.1);
 }
